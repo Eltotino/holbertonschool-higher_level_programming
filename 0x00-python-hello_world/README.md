@@ -1,1 +1,1 @@
-#Python is funnier than C
+#HELLO PYTHON WORLD
