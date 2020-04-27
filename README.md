@@ -1,1 +1,1 @@
-#Cisfun# holbertonschool-higher_level_programming
+#Python is funnier than C
