@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
     import sys
 arglist = sys.argv
 if (len(arglist)) <= 1:
