@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-import sys
+    import sys
 arglist = sys.argv
 if (len(arglist)) <= 1:
     print("0 arguments")
