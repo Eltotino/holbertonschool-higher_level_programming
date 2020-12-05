@@ -31,7 +31,7 @@ class Square():
         A Getter of the instance attributes
 
         """
-        return self._size
+        return self.__size
 
     @size.setter
     def size(self, value):
