@@ -7,6 +7,7 @@ class Square():
 
        Attributes:
             size: size of the square
+            position(tuple): position of the square
 
     """
     def __init__(self, size=0, position=(0, 0)):
@@ -84,7 +85,7 @@ class Square():
 
     def my_print(self):
         """
-        Prints thevalue of square formed by "#""
+        Prints the value of square formed by "#""
 
         """
         if self.__size == 0:
