@@ -18,9 +18,6 @@ class Square():
             size (int): the size of the square
             position(tuple): a tuple of integer to show the
             position of the square
-        Raises:
-            TypeError: if size is not an integer
-            ValueError: if size is less than 0
         """
         self.size = size
         self.position = position
