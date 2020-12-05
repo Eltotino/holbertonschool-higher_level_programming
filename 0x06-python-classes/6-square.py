@@ -77,7 +77,10 @@ class Square():
             self.__position = value
 
     def area(self):
-        """ Public Method that returns the current square area"""
+        """ Public Method that returns the current square area
+            Returns:
+                are of a square
+        """
         return (self.__size) * (self.__size)
 
     def my_print(self):
