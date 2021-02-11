@@ -13,7 +13,7 @@ class Rectangle:
     height: height of the rectangle
     """
 
-    def __init__(self, height, width):
+    def __init__(self, width, height):
         """
         Init method is the constructor of the class Rectangle
 
@@ -26,7 +26,7 @@ class Rectangle:
 
     @property
     def width(self):
-    	"""
+        """
         Getter of the width attribute
         """
         return self.__width
@@ -52,7 +52,7 @@ class Rectangle:
 
     @property
     def height(self):
-    	"""
+        """
         Getter of the height attribute
         """
         return self.__height
