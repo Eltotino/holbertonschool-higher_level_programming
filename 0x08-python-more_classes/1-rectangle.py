@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """ Rectangle module """
 
 
@@ -21,8 +22,8 @@ class Rectangle:
             width(int): width of the rectangle
             height(int): height of the rectangle
         """
-        self.height = height
         self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -37,11 +38,11 @@ class Rectangle:
         Setter of the width attribute
 
         Args:
-            value(int):width of the rectangle
+            value(int):positive int
 
         Raises:
-            TypeError: width must be an int
-            ValueError: width must be <= 0
+            TypeError: value must be an int
+            ValueError: value must be <= 0
         """
         if type(value) is not int:
             raise TypeError("width must be an int")
@@ -62,11 +63,11 @@ class Rectangle:
         Setter of the height attribute
 
         Args:
-            value(int): height of the rectangle
+            value(int): positive int
 
         Raises:
-        TypeError: height must be an int
-        ValueError: height must be <= 0
+        TypeError: if value not an int
+        ValueError: value must be <= 0
         """
         if type(value) is not int:
             raise TypeError("height must be an int")
