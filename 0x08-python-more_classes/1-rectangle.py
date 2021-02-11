@@ -13,7 +13,7 @@ class Rectangle:
     height: height of the rectangle
     """
 
-    def __init__(self, width, height):
+    def __init__(self, width=0, height=0):
         """
         Init method is the constructor of the class Rectangle
 
@@ -69,7 +69,7 @@ class Rectangle:
         TypeError: height must be an int
         ValueError: height must be <= 0
         """
-        if not type(value) is int:
+        if type(value) is not int:
             raise TypeError("width must be an int")
         if value < 0:
             raise ValueError("width must be >= 0")
