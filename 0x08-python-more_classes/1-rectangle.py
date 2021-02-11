@@ -14,7 +14,7 @@ class Rectangle:
         height: height of the rectangle
     """
 
-    def __init__(self, height=0, width=0):
+    def __init__(self, width=0, height=0):
         """
         Init method is the constructor of the class Rectangle
 
