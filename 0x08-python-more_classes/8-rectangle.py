@@ -132,12 +132,12 @@ class Rectangle:
         Return:
         The biggest rectangle
         """
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
         aire_1 = rect_1.area()
         aire_2 = rect_2.area()
         if aire_1 >= aire_2:
             return rect_1
         return rect_2
-        if not isinstance(rect_1, Rectangle):
-            raise TypeError("rect_1 must be an instance of Rectangle")
-        if not isinstance(rect_2, Rectangle):
-            raise TypeError("rect_2 must be an instance of Rectangle")
