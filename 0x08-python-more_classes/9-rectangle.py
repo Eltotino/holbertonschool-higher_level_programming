@@ -144,4 +144,4 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        return cls(size, area)
+        return cls(size, perimeter)
