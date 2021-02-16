@@ -13,6 +13,7 @@ class Rectangle:
         width: width of the rectangle
         height: height of the rectangle
         number_of_instances (int): public class attribute
+        print_symbol(str): public class attribute
     """
     number_of_instances = 0
     print_symbol = '#'
