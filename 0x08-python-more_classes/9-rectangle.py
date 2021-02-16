@@ -144,4 +144,7 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        return cls(size, size)
+        """
+        A rectangle is a square
+        """
+        return (cls(size, size))
