@@ -1,3 +1,71 @@
 ''MyList'' module
------------------------------------------------------------------
------------------------------------------------------------------
+==============================================================
+
+Import print_sorted from '1-my_list'
+    >>> MyList = __import__('1-my_list').MyList
+
+Creates instance of MyList
+
+    >>> lista = MyMist()
+    >>> isinstance(lista, MyList)
+    True
+
+Creates a type list for MyList
+
+    >>> lista = MyList()
+    >>> type(lista) == MyList
+    True
+
+Print_sorted should be an instance method
+
+    >>> type(MyList.__dict__['print_sortes'])
+    <class 'function'>
+
+Gives a sorted list
+
+    >>> lista = MyList()
+    >>> lista.print_sorted()
+    []
+
+Appends a value to the given list 
+
+    >>> lista = MyList()
+    >>> lista.append(1)
+    >>> lista.append(4)
+    >>> lista.append(2)
+    >>> lista.append(3)
+    >>> lista.append(5)
+
+Prints the sorted list
+    
+    >>> lista.print_sorted()
+    [1, 2, 3, 4, 5]
+
+Conserves the original list
+
+    >>> lista = MyList()
+    >>> lista.append(1)
+    >>> lista.append(4)
+    >>> lista.append(2)
+    >>> lista.append(3)
+    >>> lista.append(5)
+    >>> lista.print_sorted()
+    [1, 2, 3, 4, 5]
+    >>> print(lista)
+    [1, 4, 2, 3, 5]
+
+Returns the same when it is already sorted
+
+    >>> lista = MyList([-200, -26, 0, 26, 200])
+    >>> lista.print_sorted()
+    [-200, -26, 0, 26, 200]
+
+Returns the same when it is already sorted
+
+    >>> lista = MyList([200, -26, -60, 52, 26, -200])
+    >>> x = lista
+    >>> x.print_sorted()
+    [-200, -60, -26, 26, 52, 200]
+    >>> x is lista
+    True
+    
