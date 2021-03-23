@@ -6,7 +6,9 @@ class Student:
     """Student class
 
     Attributes:
-        first_name, last_name, age
+        first_name (str): Student's name
+        last_name (str): Student's last name
+        age (int): Student's age
     """
     def __init__(self, first_name, last_name, age):
         """Initialises the Student"""
