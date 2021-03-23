@@ -12,4 +12,4 @@ def class_to_json(obj):
     Returns:
         a dictionary with simple data structure
     """
-    return obj.__str__
+    return obj.__dict__
