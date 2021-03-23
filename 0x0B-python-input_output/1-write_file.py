@@ -3,7 +3,7 @@
 
 
 def write_file(filename="", text=""):
-    """Writes a string into a file and 
+    """Writes a string into a file and
     returns number of lines in a txt file
 
     Args:
