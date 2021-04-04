@@ -1,24 +1,11 @@
 #!/usr/bin/python3
-"""
-Add_integer module
-"""
+"""Add_integer module"""
 
 
 def add_integer(a, b=98):
-    """
-Addition of two integer a and b
+    """Args:va : integer, b : integer
 
-Args:
-a : integer
-b : integer
-
-Raises:
-TypeError: if args are not integer
-
-
-Returns:
-(int) : addition of a  and b
-    """
+    Returns: (int) : addition of a  and b"""
     if type(a) not in [int, float]:
         raise TypeError("a must be an integer")
     if type(b) not in [int, float]:
