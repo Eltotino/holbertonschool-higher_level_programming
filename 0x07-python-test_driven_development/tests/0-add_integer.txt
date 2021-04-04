@@ -1,9 +1,6 @@
-# 0-add_integer.txt
-
 =======================
 0-add_integer.py
 =======================
-
 ''add_integer'' module	
 ----------------------------------------------------------
 Import add_integer from 0-add_integer
