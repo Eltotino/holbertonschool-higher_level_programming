@@ -39,3 +39,23 @@ class Square(Rectangle):
             self.y,
             self.size
             )
+    def update(self, *args, **kwargs):
+        """ Updates the rectangles' attributes"""
+        for num, obj in enumerate(args):
+            if num == 0:
+                self.id = obj
+            if num == 1:
+                self.size = obj
+            if num == 2:
+                self.x = obj
+            if num == 3:
+                self.y = obj     
+        for key, value in kwargs.items():
+            if key == "id":
+                self.id = value
+            if key == "size":
+                self.width = value
+            if key == "x":
+                self.x = value
+            if key == "y":
+                self.y = value
