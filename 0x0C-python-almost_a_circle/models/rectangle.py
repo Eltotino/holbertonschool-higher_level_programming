@@ -92,6 +92,7 @@ class Rectangle(Base):
             )
 
     def update(self, *args):
+        """ Updates the rectangles' attributes"""
         for num, obj in enumerate(args):
             if num == 0:
                 self.id = obj
