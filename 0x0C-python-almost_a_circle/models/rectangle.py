@@ -90,3 +90,16 @@ class Rectangle(Base):
             self.width,
             self.height
             )
+
+    def update(self, *args):
+        for num, obj in enumerate(args):
+        	if num == 0:
+        	    self.id = obj
+        	if num == 1:
+        	    self.width = obj
+        	if num == 2:
+        	    self.height = obj
+        	if num == 3:
+        	    self.x = obj
+        	if num == 4:
+        	    self.y = obj
