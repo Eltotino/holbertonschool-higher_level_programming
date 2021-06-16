@@ -91,7 +91,7 @@ class Rectangle(Base):
             self.height
             )
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ Updates the rectangles' attributes"""
         for num, obj in enumerate(args):
             if num == 0:
@@ -104,3 +104,14 @@ class Rectangle(Base):
                 self.x = obj
             if num == 4:
                 self.y = obj
+        for key, value in kwargs.items():
+            if key == "id":
+                self.id = value
+            if key == "width":
+                self.width = value
+            if key == "height":
+                self.height = value
+            if key == "x":
+                self.x = value
+            if key == "y":
+                self.y = value
