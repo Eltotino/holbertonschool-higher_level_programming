@@ -30,5 +30,5 @@ class Base:
         if list_objs is not None:
             for dic in list_objs:
                 lista.append(cls.to_dictionary(dic))
-        with open(str(cls.__name__+ ".json"), "w", encoding="UTF-8") as file:
+        with open(str(cls.__name__ + ".json"), "w", encoding="UTF-8") as file:
             file.write(cls.to_json_string(lista))
