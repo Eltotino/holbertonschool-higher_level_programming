@@ -51,3 +51,17 @@ class Base:
             dummy = None
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """Returns a list of instance"""
+        filename = cls.__name__ + ".json"
+        lista2 = []
+        try:
+            with open(filename, "r", encoding="UTF-8") as file:
+                dicto = cls.from_json_string(file.read())
+                for line in dicto:
+                    lista2.append(cls.create(**line))
+                return lista2
+        except IOError:
+            return []
