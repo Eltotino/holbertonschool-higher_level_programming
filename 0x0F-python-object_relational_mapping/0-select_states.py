@@ -24,6 +24,6 @@ def select_states():
         print(row)
     cur.close()
     db.close()
- 
+
 if __name__ == "__main__":
     select_states()
