@@ -20,10 +20,10 @@ def select_states():
 
     cur = db.cursor()
     cur.execute("SELECT *\
-    	        FROM states\
-    	        WHERE name LIKE BINARY 'N%'\
-    	        ORDER BY id ASC"
-    	        )
+                FROM states\
+                WHERE name LIKE BINARY 'N%'\
+                ORDER BY id ASC"
+                )
     rows = cur.fetchall()
     for row in rows:
         print(row)
@@ -31,4 +31,4 @@ def select_states():
     db.close()
 
 if __name__ == "__main__":
-	select_states()
+    select_states()
