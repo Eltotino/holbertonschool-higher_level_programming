@@ -20,11 +20,9 @@ def safe_filter():
                          )
 
     cur = db.cursor()
-    cur.execute("SELECT *\
-                FROM states\
-                WHERE name = %(searched_name)\
-                ORDER BY id ASC",
-                {'searched_name': search}
+    cur.execute("""SELECT * FROM states\
+                WHERE name LIKE %(state)s""",
+                {'state': search}
                 )
     rows = cur.fetchall()
     for row in rows:
