@@ -18,8 +18,8 @@ def delete_state():
 
     Session = sessionmaker()
     session = Session(bind=engine)
-    for row in session.query(State).filter(State.name.like('%a')):
-        session.delete(row)
+    for state in session.query(State).filter(State.name.like('%a%')):
+        session.delete(state)
     session.commit()
     session.close()
 
