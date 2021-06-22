@@ -16,9 +16,11 @@ def create_relationship():
 
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.format(
              username, password, database), pool_pre_ping=True)
-
+    
+    Base.metadata.create_all(engine)
     Session = sessionmaker()
-    session = Session(bind=engine)
+    Session.configure(bind=engine)
+    session = Session()
 
     new_state = State(name='California')
     new_city = City(name='San Francisco')
