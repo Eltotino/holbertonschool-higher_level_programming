@@ -5,6 +5,6 @@ const Film = process.argv[2];
 request(apiUrl + Film, (error, response, body) => {
   if (!error) {
     const persos = JSON.parse(body).characters;
-    console.log(persos)
+    console.log(persos);
   }
 });
