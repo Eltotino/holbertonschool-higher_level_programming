@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const request = require('request');
-const Url = process.argv[2];
-request.get(Url)
+const theUrl = process.argv[2];
+request.get(theUrl)
   .on('response', response => {
-    console.log('code: $(response.statusCode}');
+    console.log(`code: ${response.statusCode}`);
   });
