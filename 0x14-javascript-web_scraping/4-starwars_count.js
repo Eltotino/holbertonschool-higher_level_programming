@@ -3,13 +3,13 @@ const request = require('request');
 const apiUrl = process.argv[2];
 request(apiUrl, (error, response, body) => {
   if (!error) {
-    const results = JSON.parse(body).results;
-    let counter = 0;
-    for (const movie of results) {
+    const result = JSON.parse(body).result;
+    let count = 0;
+    for (const movie of result) {
       if (movie.characters.find(value => value.endsWith('18/'))) {
-        counter++;
+        count++;
       }
     }
-    console.log(counter);
+    console.log(count);
   }
 });
