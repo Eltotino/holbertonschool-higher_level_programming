@@ -5,7 +5,7 @@ request(apiUrl, (error, response, body) => {
   if (!error) {
     const all = JSON.parse(body);
     const result = {};
-    for (const alls of todos) {
+    for (const alls of all) {
       if (alls.completed) {
         if (!result[alls.UserId]) {
           result[alls.userId] = 1;
