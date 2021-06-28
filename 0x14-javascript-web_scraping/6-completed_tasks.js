@@ -3,14 +3,14 @@ const request = require('request');
 const apiUrl = process.argv[2];
 request(apiUrl, (error, response, body) => {
   if (!error) {
-    const all = JSON.parse(body);
+    const todos = JSON.parse(body);
     const result = {};
-    for (const alls of all) {
-      if (alls.completed) {
-        if (!result[alls.UserId]) {
-          result[alls.userId] = 1;
+    for (const all of todos) {
+      if (all.completed) {
+        if (!result[all.userId]) {
+          result[all.userId] = 1;
         } else {
-          result[alls.userId]++;
+          result[all.userId]++;
         }
       }
     }
