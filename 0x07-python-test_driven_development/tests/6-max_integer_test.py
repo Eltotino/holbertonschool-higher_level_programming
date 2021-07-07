@@ -33,10 +33,6 @@ class TestMaxInteger(unittest.TestCase):
         with self.assertRaises(TypeError):
             max_integer(lista)
 
-    def test_max_empty(self):
-        lista = []
-        with self.assertRaises(ValueError):
-            max_integer(lista)
 
 if __name__ == "__main__":
     unittest.main()
