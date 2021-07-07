@@ -16,9 +16,9 @@ class TestMaxInteger(unittest.TestCase):
         lista = [0, 1, 3, 60]
         self.assertEqual(max_integer(lista), 60)
 
-    def test_mixed_max(self):
-        lista = [-1, -8, 0, 8, -5]
-        self.assertEqual(max_integer(lista), 8)
+    def test_only_neg_max(self):
+        lista = [-1, -8, -3, -6, -5]
+        self.assertEqual(max_integer(lista), -1)
 
     def test_max_string(self):
         lista = ['taoufik', 5, 6, 9]
