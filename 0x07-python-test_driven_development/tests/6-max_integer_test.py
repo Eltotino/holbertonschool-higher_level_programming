@@ -35,7 +35,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_max_empty(self):
         lista = []
-        with self.assertRaises(TypeError):
+        with self.assertRaises(ValueError):
             max_integer(lista)
 
 if __name__ == "__main__":
