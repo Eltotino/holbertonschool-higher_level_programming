@@ -24,6 +24,9 @@ class TestMaxInteger(unittest.TestCase):
         lista = [1, -8, 3, 6, 5]
         self.assertEqual(max_integer(lista), 6)
 
+    def test_middle_max(self):
+        lista = [-1, 8, 60, 6, 25]
+        self.assertEqual(max_integer(lista), 60)
 
     def test_max_string(self):
         lista = ['taoufik', 5, 6, 9]
