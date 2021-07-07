@@ -33,6 +33,9 @@ class TestMaxInteger(unittest.TestCase):
         with self.assertRaises(TypeError):
             max_integer(lista)
 
+    def test_one_in(self):
+        lista = [6]
+        self.assertEqual(max_integer(lista), 6)
 
 if __name__ == "__main__":
     unittest.main()
