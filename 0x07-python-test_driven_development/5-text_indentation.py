@@ -13,10 +13,14 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
-    strg = ""
-    for char in text:
-        strg += char
-        if char in ":.?":
-            print(strg.lstrip(), end="\n\n")
-            strg = ""
-    print(strg.lstrip(), end='')
+    no_space = True
+    for c in range(len(text)):
+        if text[c] == ' ' and no_space:
+            continue
+        else:
+            if text[c] in ":.?":
+                print(text[c], end="\n\n")
+                no_space = True
+            else:
+                print(text[c], end='')
+                no_space = False
