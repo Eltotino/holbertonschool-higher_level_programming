@@ -20,6 +20,11 @@ class TestMaxInteger(unittest.TestCase):
         lista = [-1, -8, -3, -6, -5]
         self.assertEqual(max_integer(lista), -1)
 
+    def test_only_one_neg_max(self):
+        lista = [1, -8, 3, 6, 5]
+        self.assertEqual(max_integer(lista), 6)
+
+
     def test_max_string(self):
         lista = ['taoufik', 5, 6, 9]
         with self.assertRaises(TypeError):
